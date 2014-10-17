@@ -1,0 +1,30 @@
+<div class="container well" >
+<form name="loginForm" 
+	id="login-form" 
+	class="text-center form">
+
+		<div class="form-group">
+			<input id="phone" 
+				type="text" 
+				placeholder="Mobile" 
+				class="form-control" 
+				ng-model="user.phone"
+			/>
+		</div>
+		
+		<div class="form-group">
+			<input id="password" type="password" 
+				placeholder="Password" 
+				class="form-control" 
+				ng-model="user.password"/>
+		</div>
+
+		<div class="form-group">
+			<button type="button" 				
+					class="btn btn-primary" 
+					ng-click="login()"/> 
+					Login 
+			</button>
+		</div>
+</form>
+</div>

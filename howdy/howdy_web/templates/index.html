@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load staticfiles %}    
+<title>Howdy</title>
+<meta name="keywords" content="Python, Django, framework, open-source"/>
+<meta name="description" content="A sample django app."/>
+
+ <meta charset="utf-8">
+    <link href="{% static "/public/css/lib/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "/public/css/app.css" %}" rel="stylesheet">
+
+    <script src="{% static "/public/js/lib/angular/angular.min.js" %}"></script>
+    <script src="{% static "/public/js/lib/angular/angular-ui-router.min.js" %}"></script>
+    <script src="{% static "/public/js/lib/restangular/restangular.min.js" %}"></script>
+    <script src="{% static "/public/js/lib/underscore/underscore-min.js" %}"></script>
+
+    <script src="{% static "/public/js/app.js" %}"></script>
+    <script src="{% static "/public/js/services.js" %}"></script>
+    <script src="{% static "/public/js/controllers.js" %}"></script>
+    <script src="{% static "/public/js/routes.js" %}"></script>
+    <script src="{% static "/public/js/back_button.js" %}"></script>    
+</head>
+
+<body ng-app="howdy">
+	<div id="main-container" 
+        class="container" 
+        ui-view="default" 
+        ng-controller="AppController"
+         ng-init="redirectToLogin()">				 
+		<a ui-sref="submit-url"> Submit Url</a>
+	</div>
+</body>
+</html>
