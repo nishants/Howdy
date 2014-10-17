@@ -3,8 +3,8 @@
 <head>
 {% load staticfiles %}    
 <title>Howdy</title>
-<meta name="keywords" content="Python, Django, framework, open-source"/>
-<meta name="description" content="A sample django app."/>
+<meta name="keywords" content="whatsapp, chat, howdy, open-source"/>
+<meta name="description" content="A web based client for whatsapp messenger."/>
 
  <meta charset="utf-8">
     <link href="{% static "/public/css/lib/bootstrap.min.css" %}" rel="stylesheet">
@@ -27,8 +27,7 @@
         class="container" 
         ui-view="default" 
         ng-controller="AppController"
-         ng-init="redirectToLogin()">				 
-		<a ui-sref="submit-url"> Submit Url</a>
+        ng-init="redirectToLogin()">				 
 	</div>
 </body>
 </html>

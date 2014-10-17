@@ -35,7 +35,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'howdy.urls'
+ROOT_URLCONF = 'howdy_web.urls'
 
 WSGI_APPLICATION = 'howdy.wsgi.application'
 
